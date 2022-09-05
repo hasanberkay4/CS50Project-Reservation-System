@@ -1,0 +1,41 @@
+{% extends "template.html" %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+<link href="{{ url_for('static', filename='styles.css') }}" />
+
+
+{% block specific %}
+        {% if confirmation %}
+        <div class="alert alert-success alert-dismissible fade show" role="alert" style="margin-bottom: 0">
+          <strong>Success </strong> {{ confirmation }}
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        {% endif %}
+
+    <div class="container-fluid">
+      <div class="background-img"></div>
+      <div class="intro-columns">
+          <div class="container">
+              <div class="row">
+                <div class="col-lg-6">
+                    <h1>Learn how to learn with peer study and discussion sessions</h1>
+                </div>
+                <div class="col-lg-6">
+                   <form class="form-signin intro-form" action="/login" method="post">
+                      <h1>ADP</h1>
+                      <h3 class="h4 mb-3 font-weight-normal">Please sign in</h3>
+                      <input type="email" name="mail" class="form-control" placeholder="Email address" autofocus autocomplete="off">
+                      <input type="password" name="password" class="form-control" placeholder="Password">
+                      <button class="btn btn-primary btn-block" type="submit">Login</button>
+                    </form>
+                </div>
+              </div>
+          </div>
+     </div>
+    </div>
+{% endblock %}

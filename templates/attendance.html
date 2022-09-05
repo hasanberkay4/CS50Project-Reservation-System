@@ -1,0 +1,31 @@
+{% extends "template.html" %}
+
+{% block title %}
+    Attendance
+{% endblock %}
+
+{% block specific %}
+    <main class="container p-5">
+        <form action="/attendance" method="post">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td>Mail</td>
+                    <td>Attendance Status</td>
+                </tr>
+            </thead>
+            <tbody>
+              {% for person in people %}
+                <tr>
+                    <td>{{ person["mail"] }}</td>
+                    <td>
+                    <input type="checkbox" name="present" value="{{ person["id"] }}">
+                    </td>
+                </tr>
+              {% endfor %}
+            </tbody>
+        </table>
+        <button class="btn btn-lg btn-outline-dark" type="submit" name="attendance2">Submit</button>
+        </form>
+    </main>
+{% endblock %}

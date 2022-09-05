@@ -1,0 +1,29 @@
+{% extends "template.html" %}
+
+{% block title %}
+    Registered
+{% endblock %}
+
+{% block specific %}
+
+    <main class="container p-5">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td>Week</td>
+                    <td>Name</td>
+                    <td>Date & Time</td>
+                </tr>
+            </thead>
+            <tbody>
+              {% for data in dataset%}
+                <tr>
+                    <td>{{ data["week"] }}</td>
+                    <td>{{ data["name"] }}</td>
+                    <td>{{ data["time"] }}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+        </table>
+    </main>
+{% endblock %}

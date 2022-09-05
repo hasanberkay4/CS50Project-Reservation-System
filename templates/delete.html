@@ -1,0 +1,42 @@
+{% extends "template.html" %}
+
+{% block title %}
+    Delete Session
+{% endblock %}
+
+{% block specific %}
+<main class="container p-5">
+     <div class="row register-form">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+         <form action="/delete" method="post">
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="id" placeholder="Select the id" type="numeric" min="1" max="15" step="1">
+            </div>
+            <button class="btn btn-primary delete-button" type="submit">Delete The Session</button>
+        </form>
+        </div>
+    </div>
+
+        <thead>
+            <table class="table table-striped">
+            <tr>
+                <td>ID</td>
+                <td>Week</td>
+                <td>Name</td>
+                <td>Date & Time</td>
+            </tr>
+        </thead>
+        <tbody>
+          {% for row in rows%}
+            <tr>
+                <td>{{ row["id"] }}</td>
+                <td>{{ row["week"] }}</td>
+                <td>{{ row["name"] }}</td>
+                <td>{{ row["time"] }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+    </table>
+</main>
+{% endblock %}

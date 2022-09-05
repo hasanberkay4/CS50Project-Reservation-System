@@ -1,0 +1,25 @@
+{% extends "template.html" %}
+
+{% block title %}
+    Registered
+{% endblock %}
+
+{% block specific %}
+
+    <main class="container p-5">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td>Registered Users</td>
+                </tr>
+            </thead>
+            <tbody>
+              {% for row in rows%}
+                <tr>
+                    <td>{{ row["mail"] }}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+        </table>
+    </main>
+{% endblock %}

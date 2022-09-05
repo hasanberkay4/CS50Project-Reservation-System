@@ -1,0 +1,22 @@
+{% extends "template.html" %}
+
+{% block title %}
+    Registration
+{% endblock %}
+
+{% block specific %}
+     <div class="row register-form">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+           <form class="form-signin" action="/register" method="post">
+              <h1>ADP</h1>
+              <h2 class="h3 mb-3 font-weight-normal">Please use "@sabanciuniv.edu"</h2>
+              <input type="email" class="form-control" placeholder="Email address" name="mail" autofocus autocomplete="off">
+              <input type="password" class="form-control" placeholder="Password" name="password">
+              <input type="password" class="form-control" placeholder="Password (Again)" name="validation">
+              <button class="btn btn-lg btn-outline-dark btn-block" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

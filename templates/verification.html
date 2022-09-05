@@ -1,0 +1,15 @@
+{% extends "template.html" %}
+
+{% block title %}
+    Verification
+{% endblock %}
+
+{% block specific %}
+<main class="container p-5">
+    <h1>Almost Done...</h1>
+    <hr>
+    <h3>Please check your mail adress: <strong>{{ email }}</strong> to complete registration</h3>
+    <hr>
+    <h4>You have <strong>10 minutes</strong> before link expires!</h4>
+</main>
+{% endblock %}
