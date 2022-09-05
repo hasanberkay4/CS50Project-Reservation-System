@@ -1,4 +1,4 @@
-# CS50 FINAL PROJECT / TITLE: Reservation System
+# PROJECT TITLE: Reservation System
 
 #### Video Demo: ???
 
