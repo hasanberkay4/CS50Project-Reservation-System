@@ -4,7 +4,7 @@
 
 #### Description:
 
-Hey everyone, i will try to describe my humble cs50 final project which is full-stack web application. This project (website) imitates reservation system where teachers (this website is focused on education) can create / delete lecture sessions entering proper inputs and students can attend. Actually this may be used in my university because there is already an academic facility where peer students gather with their friends and discuss lecture materials. Main focus was on back-end rather than front-end except the homepage where i put some effort to get great homepage which may be good for first impression.
+Hey everyone, i will try to describe my humble cs50 final project which is full-stack web application developed as freshman. This project imitates reservation system where teachers (this website is focused on education) can create / delete lecture sessions entering proper inputs and students can attend. Main focus was on back-end rather than front-end except the homepage where i put some effort to get great homepage which may be good for first impression.
 
 Techonologies employed:
 
