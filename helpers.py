@@ -23,7 +23,7 @@ def admin_required(f):
 
 
 def isadmin(mail):
-    admin_list = ["hasanberkay@sabanciuniv.edu"]
+    admin_list = ["???@sabanciuniv.edu"]
     if mail in admin_list:
         return True
     return False
